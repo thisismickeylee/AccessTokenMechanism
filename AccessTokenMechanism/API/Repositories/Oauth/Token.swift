@@ -9,7 +9,7 @@ import Foundation
 
 struct Token: Codable {
 
-    enum CodingKey: String {
+    enum CodingKeys: String, CodingKey {
         case token = "access_token"
         case expiresIn = "expires_in"
     }

@@ -19,7 +19,8 @@ struct OauthRequester: Requester, JSONContentTypeHeaderRequestInserting {
     static func setDefaultOAuthParameters(clientId: String, clientSecret: String) {
         defaultOAuthParameters = [
             "client_id": clientId,
-            "client_secret": clientSecret
+            "client_secret": clientSecret,
+            "audience": "https://api.usabilla.com"
         ]
     }
 
